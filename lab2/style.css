@@ -1,0 +1,101 @@
+*{box-sizing: border-box;}
+html{scroll-behavior: smooth;}
+/*-----GRID SYSTEM-----*/
+img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 1200px;
+    margin: 20px auto;
+    background-color: rgb(220, 250, 250);
+    box-shadow: 1px 1px 3px gray;
+}
+.img-container{
+    margin: 10px;
+    border: solid 2px black;
+}
+/*-----MEDIA QUERY-----*/
+@media screen and (max-width:1200px){
+    .grid-container{
+        background-color: pink;
+        width: 800px;
+        grid-template-columns: auto auto;
+    }
+}
+
+/*-----Breakpoint for Medium-----*/
+@media screen and (max-width:900px){
+    .grid-container{
+        grid-template-columns: auto;
+        background-color: chartreuse;
+        width: 80%;
+    }
+}
+
+/*-----MAIN CONTAINER-----*/
+.header-container{
+    background-color: purple;
+    color:white;
+    display: flex;
+}
+.header-container > div{
+    padding: 20px;
+}
+.header-container > div:nth-child(3){
+    margin-left: auto;
+}
+.intro-container{
+    display: grid;
+    grid-template-columns: 30% 60% 10%;
+    color: white;
+    height: 300px;
+}
+/*-----INTRO CONTAINER-----*/
+.nav-menu{
+    background-color: lightpink;
+}
+.content{
+    background-color: hotpink;
+}
+.blog{
+    background-color: darkblue;
+}
+.footer{
+    background-color: rgb(50, 20, 50);
+    color: white;
+    height: 100px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.footer > div {
+    border: solid 2px palevioletred;
+}
+/*-----Breakpoint for 900px-----*/
+@media screen and (max-width: 900px){
+    .nav-menu{
+        background-color: olive;
+    }
+    .content{
+        grid-column: span 2;
+    }
+    .blog{
+        grid-column: span 3;
+    }
+}
+
+/*-----Breakpoint for 600px-----*/
+@media screen and (max-width: 600px) {
+    .nav-menu{
+        grid-column: span 3;
+    }
+    .content{
+        grid-column: span 3;
+    }
+    .blog{
+        grid-column: span 3;
+    }
+}
