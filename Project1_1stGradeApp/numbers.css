@@ -1,0 +1,164 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #ffeb3b; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+/* COLLAPSIBLE MENU & NAV */
+.headerNav {
+    width: 100%;
+    background-color: #1E90FF; 
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 1.2rem;
+    margin-right: 20px
+}
+.menubtn {
+    cursor: pointer;
+}
+.collapsemenu {
+    display: none;
+    flex-direction: column;
+    background-color: #1E90FF; 
+    padding: 10px;
+}
+.collapsemenu div {
+    padding: 10px;
+}
+.collapsemenu div a {
+    color: white;
+    text-decoration: none;
+}
+.collapsemenu div a:hover {
+    text-decoration: underline;
+}
+.collapsemenu.closeToOpen {
+    display: flex;
+}
+.container {
+    text-align: center;
+    margin-top: 60px; 
+    margin-bottom: 10px;
+}
+.back-button {
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    background-color: #1E90FF; /* Dodger Blue */
+    color: #FFFFFF;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.2s;
+}
+.back-button:hover {
+    background-color: #1C86EE; /* Slightly darker Dodger Blue */
+}
+h1 {
+    color: #1E90FF; /* Dodger Blue */
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+/* CARDS */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.card {
+    background-color: #FFFFFF; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100px;
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+.card img {
+    width: 100%;
+}
+/* MODAL */
+.modalWindow {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.modalContent {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+    text-align: center;
+}
+.closemodal {
+    float: right;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #FF4500; 
+}
+.modal-body img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+.modal-body p {
+    color: #1E90FF; 
+}
+.footer {
+    background-color: #1E90FF; 
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    bottom: 0;
+    margin-top: 100px;
+}
+.footer-content p {
+    margin: 5px 0;
+    color: white;
+}
+.footer-content a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.footer-content a:hover {
+    text-decoration: underline;
+}
+a {
+    background-color: #3f51b5;
+    color: #ffffff;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.2s;
+}
+a:hover {
+    background-color: #303f9f;
+}
+

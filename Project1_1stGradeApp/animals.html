@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Animals</title>
+    <link rel="stylesheet" href="animals.css">
+</head>
+<body>
+    <section class="headerNav">
+        <header class="header-container">
+            <div>Playful Pals</div>
+            <div class="menubtn">Menu<span>&#9776;</span></div>
+        </header>
+        <div class="collapsemenu">
+            <div><a href="index.html">Home</a></div>
+            <div><a href="numbers.html">Numbers</a></div>
+            <div><a href="animals.html">Animals</a></div>
+        </div>
+    </section>
+    <div class="container">
+        <a href="index.html" class="back-button">← Back</a>
+        <h1>Learn Animals</h1>
+        <div class="cards">
+            <!-- Animal cards -->
+            <div class="card" data-animal="cat">
+                <img src="images/cat.png" alt="Cat">
+            </div>
+            <div class="card" data-animal="dog">
+                <img src="images/dog.png" alt="Dog">
+            </div>
+            <div class="card" data-animal="cow">
+                <img src="images/cow.png" alt="Cow">
+            </div>
+            <div class="card" data-animal="lion">
+                <img src="images/lion.png" alt="Lion">
+            </div>
+            <div class="card" data-animal="elephant">
+                <img src="images/elephant.png" alt="Elephant">
+            </div>
+            <div class="card" data-animal="tiger">
+                <img src="images/tiger.png" alt="Tiger">
+            </div>
+            <div class="card" data-animal="bear">
+                <img src="images/bear.png" alt="Bear">
+            </div>
+            <div class="card" data-animal="giraffe">
+                <img src="images/giraffe.png" alt="Giraffe">
+            </div>
+            <div class="card" data-animal="zebra">
+                <img src="images/zebra.png" alt="Zebra">
+            </div>
+            <div class="card" data-animal="monkey">
+                <img src="images/monkey.png" alt="Monkey">
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL WINDOW -->
+    <section class="modalWindow" id="modal">
+        <div class="modalContent">
+            <header class="closemodal">&times;</header>
+            <div class="modal-body">
+                <img src="" alt="Animal Image" id="modal-image">
+                <p id="modal-pronunciation"></p>
+                <p id="modal-english"></p>
+                <p id="modal-other-language"></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 First Grade Learning Web App. All Rights Reserved.</p>
+            <p><a href="mailto:adeeb19909@gmail.com">Contact Us</a></p>
+            <p>
+                <a href="https://www.facebook.com" target="_blank">Facebook</a> |
+                <a href="https://www.instagram.com" target="_blank">Instagram</a> |
+                <a href="https://www.youtube.com" target="_blank">YouTube</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="animals.js"></script>
+    <script src="menu.js"></script>
+</body>
+</html>
