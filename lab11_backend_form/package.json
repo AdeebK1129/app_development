@@ -1,17 +1,17 @@
 {
-  "name": "lab10_mongodb",
+  "name": "lab11_backend_form",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Adeeb Khan",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "body-parser": "^1.20.2",
     "express": "^4.19.2",
-    "mocha": "^10.7.3",
-    "mongoose": "^8.5.3",
+    "mongoose": "^8.5.2",
     "nodemon": "^3.1.4"
   }
 }
