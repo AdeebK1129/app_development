@@ -1,0 +1,13 @@
+.component_title{
+    background-color: aqua;
+}
+.btncart, .btn_out_of_stock{
+    background-color: crimson;
+    color: white;
+}
+.btncart:disabled, .btn_out_of_stock:disabled{
+    background-color: lightblue;
+}
+.btncart:enabled, .btn_out_of_stock:enabled{
+    cursor: pointer;
+}
