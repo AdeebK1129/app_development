@@ -1,0 +1,93 @@
+myVirtual
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Django stuff:
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+*.db
+*.sql
+*.sqlite
+
+# Local settings
+local_settings.py
+.env
+
+# media files
+media/
+uploads/
+
+# Static files
+staticfiles/
+static/
+
+# Translators
+*.mo
+*.po
+
+# Django Migrations
+**/migrations/**
+!**/migrations/__init__.py
+
+# Virtual environments
+.env/
+venv/
+ENV/
+env.bak/
+env/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*~
+*.sublime-project
+*.sublime-workspace
+
+# Coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# Testing and linting
+.pytest_cache/
+__pycache__/
+coverage/
+.tox/
+.pytest_cache/
+.cache/
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# Documentation
+docs/_build/
+
+# Other files
+*.DS_Store
+Thumbs.db
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre
+.pyre/
